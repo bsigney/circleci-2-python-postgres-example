@@ -11,6 +11,8 @@ jobs:
     # Service container image
     
       - image: circleci/postgres:9.6-alpine
+        environment:
+          POSTGRES_USER: circleci
         
     steps:
       - checkout
